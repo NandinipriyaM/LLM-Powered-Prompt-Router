@@ -1,0 +1,26 @@
+# Virtual environment
+venv/
+env/
+ENV/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment variables
+.env
+
+# Log files (but we want to keep route_log.jsonl for submission)
+# If you want to keep it, you can comment the next line:
+# route_log.jsonl
+# But we DO want to commit it, so don't ignore it.
+
+# IDE folders
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
