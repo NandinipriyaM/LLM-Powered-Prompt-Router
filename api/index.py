@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from app.main import process_message
 
 app = Flask(__name__)
@@ -6,9 +6,7 @@ app = Flask(__name__)
 
 @app.route("/", methods=["GET"])
 def home():
-    return jsonify({
-        "message": "LLM-Powered Prompt Router API is running"
-    })
+    return render_template("index.html")
 
 
 @app.route("/api", methods=["POST"])
