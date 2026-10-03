@@ -1,0 +1,8 @@
+services:
+  prompt-router:
+    build: .
+    environment:
+      - OLLAMA_HOST=http://host.docker.internal:11434
+      - OLLAMA_MODEL=llama3.2
+    volumes:
+      - ./route_log.jsonl:/app/route_log.jsonl
